@@ -17,7 +17,9 @@ export const CartHeader = styled.div`
   cursor: pointer;
 `;
 
-export const CartBody = styled.div``;
+export const CartBody = styled.div`
+  display: ${(props) => (props.show ? "block" : "none")};
+`;
 
 export const CartIcon = styled.img`
   width: 23px;
@@ -27,6 +29,58 @@ export const CartIcon = styled.img`
 `;
 
 export const CartText = styled.div`
+  flex: 1;
   color: #fff;
   font-size: 17px;
+`;
+
+export const CartDown = styled.img`
+  width: 23px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 15px;
+`;
+
+export const ProductsArea = styled.div``;
+
+export const ProductItem = styled.div`
+  display: flex;
+  margin: 10px;
+`;
+
+export const ProductPhoto = styled.img`
+  width: 64px;
+  height: auto;
+  border-radius: 10px;
+`;
+export const ProductInfoArea = styled.div`
+  flex: 1;
+  margin-left: 10px;
+`;
+
+export const ProductName = styled.div`
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+`;
+export const ProductPrice = styled.div`
+  font-size: 13px;
+  color: #fff;
+`;
+
+export const ProductQuantityArea = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const ProductQtText = styled.div`
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0px 5px;
+`;
+
+export const CartQtIcon = styled.img`
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
 `;
